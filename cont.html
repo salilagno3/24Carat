@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <style>
+        nav {
+            position: sticky;
+
+            background-color: #ffffff;
+            /* Set background color */
+            color: #000000;
+            /* Set text color */
+            height: 60px;
+            /* Set height */
+            display: flex;
+            /* Use flexbox for alignment */
+            justify-content: space-between;
+            /* Space out items in nav */
+            align-items: center;
+            /* Center items vertically */
+            padding: 30px;
+            /* Add some padding to left and right */
+            margin-bottom: 12px;
+            /* Add some margin to the bottom */
+        }
+
+        nav ul {
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+            list-style: none;
+            /* Remove default list style */
+            display: flex;
+            /* Use flexbox for alignment */
+        }
+
+        nav ul li {
+
+            padding-top: 10px;
+            margin: 15px 15px;
+            /* Add some margin between list items */
+        }
+
+        nav ul li a {
+            color: #000000;
+            /* Set text color */
+            text-decoration: none;
+            /* Remove default underline */
+            padding: 15px;
+            /* Add some padding */
+            transition: background-color 0.3s ease;
+            /* Add a transition */
+
+        }
+
+        nav ul li a:hover {
+            text-shadow: #363131;
+            background-color: #040404;
+            /* Change background color on hover */
+            color: #ffffff;
+            /* Change text color on hover */
+        }
+
+        /* Logo Styling */
+        .logo {
+            height: 69px;
+            font-size: 50px;
+            /* Set font size */
+            font-weight: bold;
+            /* Set font weight */
+            text-transform: uppercase;
+            /* Convert text to uppercase */
+            letter-spacing: 2px;
+            /* Add some letter spacing */
+            color: #fff;
+            /* Set text color */
+            text-decoration: none;
+            /* Remove default underline */
+        }
+
+        .logo:hover {
+            transform: rotate(360deg);
+
+        }
+
+        .logo img {
+            height: 70px;
+
+            margin-right: 10px;
+            /* Add some margin to the right */
+            vertical-align: middle;
+            /* Align image vertically */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="#">
+            <img src="logo.jpg" alt="Logo">
+            24-Carat.COM
+        </a>
+        <ul class="" menu>
+            <b>
+                <li><a href="website.html">Home</a></li>
+            </b>
+            <b>
+                <li><a href="About.html">About</a></li>
+            </b>
+            <!-- <b>
+                <li><a href="cont.html">Product</a></li>
+            </b> -->
+            <b>
+                <li><a href="cont.html">Contact</a></li>
+            </b>
+            <b>
+                <li><a href="login.html">Login</a></li>
+            </b>
+        </ul>
+    </nav>
+    <hr>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact us</h2>
+            <p>We would love to respond to your queries.<br>Feel free to get in touch with us.</p>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="box">
+                    <div class="icon"><ion-icon name="pin-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>ITS Mohan Nagar,<br>Ghaziabad,Uttar Pradesh,<br>201007</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>E-mail</h3>
+                        <p>support@24carat.in</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91-7355385306</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2>Tell us your query</h2>
+                    <div class="inputBox">
+                        <input type="text" name=" " required="required">
+                        <span>Full name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name=" " required="required">
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Enter your query</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name=" " value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <h1></h1>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div id="lo">
+        <a class="soc twit" href="https://twitter.com/login" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a class="soc inst" href="https://instagram.com/login" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a class="soc fb" href="https://facebook.com/login" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+    </div>
+
+
+
+
+
+
+    
+</body>
+
+</html>

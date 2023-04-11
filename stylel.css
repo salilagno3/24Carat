@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.soc{
+    color: grey;
+    transition: 0.5s;
+    text-decoration: none;
+    margin: 0 5px ; 
+    display: inline-block;  
+   
+}
+.twit:hover{
+    color: rgb(	29 161 242);
+}
+.inst:hover{
+    color: #fd5949 ;          
+}  
+.fb:hover{
+    color: blue;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgbx{
+    position: relative;
+    width: 30%;
+    height: 80%;
+}
+section .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+section .contentbx{
+    display: flex;
+    justify-content: center;
+    align-items: center-top;
+    padding-top: 80px;
+    width: 50%;
+    height: 100%;
+}
+section .contentbx .formbx{
+    width: 50%;
+}
+section .contentbx .formbx h2{
+    color: rgba(82, 53, 16, 0.543);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx .inputbx{
+    margin-bottom: 20px;
+}
+section .contentbx .formbx .inputbx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: rgba(82, 53, 16, 0.543);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx .inputbx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius:30px ;
+}
+section .contentbx .formbx .inputbx input[type="submit"]
+{
+    background:rgba(82, 53, 16, 0.543)    ;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .contentbx .formbx .inputbx input[type="submit"]:hover{
+    background: #33666d;
+}
+section .contentbx .formbx .remember{
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+}
+section .contentbx .formbx .inputbx p{
+    color: #8b6060;
+}
+section .contentbx .formbx .inputbx p a{
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #ffffff;
+    /* Set background color */
+    color: #000000;
+    /* Set text color */
+    height: 60px;
+    /* Set height */
+    display: flex;
+    /* Use flexbox for alignment */
+    justify-content: space-between;
+    /* Space out items in nav */
+    align-items: center;
+    /* Center items vertically */
+    padding: 0 30px;
+    /* Add some padding to left and right */
+    margin-bottom: 10px;
+    /* Add some margin to the bottom */
+}
+
+nav ul {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    list-style: none;
+    /* Remove default list style */
+    display: flex;
+    /* Use flexbox for alignment */
+}
+
+nav ul li {
+
+    padding-top: 10px;
+    margin: 15px 15px;
+    /* Add some margin between list items */
+}
+
+nav ul li a {
+    color: #000000;
+    /* Set text color */
+    text-decoration: none;
+    /* Remove default underline */
+    padding: 15px;
+    /* Add some padding */
+    transition: background-color 0.3s ease;
+    /* Add a transition */
+
+}
+
+nav ul li a:hover {
+    text-shadow: #363131;
+    background-color: #040404;
+    /* Change background color on hover */
+    color: #ffffff;
+    /* Change text color on hover */
+}
+
+/* Logo Styling */
+.logo {
+    height: 69px;
+    font-size: 50px;
+    /* Set font size */
+    font-weight: bold;
+    /* Set font weight */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    letter-spacing: 2px;
+    /* Add some letter spacing */
+    color: #fff;
+    /* Set text color */
+    text-decoration: none;
+    /* Remove default underline */
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+    /* Add a hover effect */
+}
+
+.logo img {
+    height: 70px;
+    /* Set image height */
+    margin-right: 10px;
+    /* Add some margin to the right */
+    vertical-align: middle;
+    /* Align image vertically */
+}
+
+
+
+.mainlogo {
+    display: block;
+    float: right;
+    height: 400px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    /* Reduce margin to avoid overlapping */
+    padding-top: 15px;
+    margin-top: 20px;
+    padding-right: 40px;
+}
+
+.line {
+    height: 90px;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 150px;
+    margin-right: 250px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(142, 119, 88, 0.463);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}

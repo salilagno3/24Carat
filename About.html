@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Us - Example Website</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Navigation Bar Styling */
+    nav {
+      background-color: #ffffff;
+      color: #000000;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+      color: #ffffff;
+    }
+
+    /* Logo Styling */
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .logo:hover {
+      transform: rotate(360deg);
+    }
+
+    .logo img {
+      height: 76px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* About Page Styling */
+    .about {
+      background-color: rgba(142, 119, 88, 0.463);
+      padding: 50px;
+    }
+
+    .about h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .about ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .about ul li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .about ul li:before {
+      content: "•";
+      font-size: 20px;
+      color: #555;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .p {
+      text-align: center;
+    }
+
+    .about {
+      border-top: #000000;
+      text-align: center;
+    }
+  </style>
+</head>
+<style>
+  nav {
+    background-color: #ffffff;
+    /* Set background color */
+    color: #000000;
+    /* Set text color */
+    height: 60px;
+    /* Set height */
+    display: flex;
+    /* Use flexbox for alignment */
+    justify-content: space-between;
+    /* Space out items in nav */
+    align-items: center;
+    /* Center items vertically */
+    padding: 0 30px;
+    /* Add some padding to left and right */
+    margin-bottom: 12px;
+    /* Add some margin to the bottom */
+  }
+
+  nav ul {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    list-style: none;
+    /* Remove default list style */
+    display: flex;
+    /* Use flexbox for alignment */
+  }
+
+  nav ul li {
+
+    padding-top: 10px;
+    margin: 15px 15px;
+    /* Add some margin between list items */
+  }
+
+  nav ul li a {
+    color: #000000;
+    /* Set text color */
+    text-decoration: none;
+    /* Remove default underline */
+    padding: 15px;
+    /* Add some padding */
+    transition: background-color 0.3s ease;
+    /* Add a transition */
+
+  }
+
+  nav ul li a:hover {
+    text-shadow: #363131;
+    background-color: #040404;
+    /* Change background color on hover */
+    color: #ffffff;
+    /* Change text color on hover */
+  }
+
+  /* Logo Styling */
+  .logo {
+    height: 69px;
+    font-size: 50px;
+    /* Set font size */
+    font-weight: bold;
+    /* Set font weight */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    letter-spacing: 2px;
+    /* Add some letter spacing */
+    color: #fff;
+    /* Set text color */
+    text-decoration: none;
+    /* Remove default underline */
+  }
+
+  .logo:hover {
+    transform: rotate(360deg);
+    /* Add a hover effect */
+  }
+
+  .logo img {
+    height: 70px;
+    /* Set image height */
+    margin-right: 10px;
+    /* Add some margin to the right */
+    vertical-align: middle;
+    /* Align image vertically */
+  }
+</style>
+
+<body>
+  <nav>
+    <a class="logo" href="#">
+      <img src="logo.jpg" alt="Logo">
+      24-Carat.COM
+    </a>
+    <ul class="" menu>
+      <b>
+        <li><a href="website.html">Home</a></li>
+      </b>
+      <b>
+        <li><a href="About.html">About</a></li>
+      </b>
+      <!-- <b>
+          <li><a href="cont.html">Product</a></li>
+      </b> -->
+      <b>
+        <li><a href="cont.html">Contact</a></li>
+      </b>
+      <b>
+        <li><a href="login.html">Login</a></li>
+      </b>
+    </ul>
+  </nav>
+  <hr>
+
+  <div class="about">
+    <h1 class="about">About us!</h1>
+
+    <p class="p">Welcome to the world of 24-Carat! <br><br> We are excited to introduce you to our innovative and
+      stylish vacuum-insulated chug that keeps your drinks cold for up to 24 hours. Our product is designed to help you
+      stay hydrated throughout the day by reminding you when it's time to drink and tracking your water intake through
+      our smart sensor "puck" and the 24-Carat App.</p>
+    <p>Our sensor puck glows to remind you when it's time to drink, and tracks your water intake by syncing via
+      Bluetooth to the 24-Carat App on your smart phone. Our app uses your personal info and step data from Apple Health
+      to calculate and adjust a personalized hydration goal based on your body and activity level. With seamless
+      integration with Apple Health, you can easily track your consumption and see all your data in one place. <br><br>
+
+      The 24-Carat STEEL bundle includes both a chug and a straw lid, giving you the flexibility to drink your water the
+      way you like it. Whether you're on the go or working out, 24-Carat is the perfect companion to keep you hydrated
+      and healthy.
+
+      Join the 24-Carat community today and take the first step towards a healthier and more hydrated you!</p>
+    <ul>
+      <li>We're a team of passionate professionals dedicated to providing the best service to our customers.</li>
+      <li>We pride ourselves on our attention to detail and commitment to excellence.</li>
+      <li>We believe in building long-lasting relationships with our clients.</li>
+
+
+      <h2 style="padding-left: 62px;margin-bottom: 10px; padding-top: 20px;">Tech Specs</h2>
+      <p style=" text-align: none; padding-left: 59px;">Other Features: Bluetooth, Charging, Health App
+        Compatible Internet Access: Some Features Require Internet Access <br><br>
+        Cable length: 20.6 in. / 52.3 cm<br><br>
+        Connections: Bluetooth<br><br>
+        Bluetooth Compatibility: Bluetooth 4.0, Bluetooth 5.0<br><br>
+        Power Source: USB<br><br>
+        Batteries: Lithium Ion<br><br>
+        Battery life: 10-14 days<br><br>
+        Charge Time: 2.5 hours<br><br>
+        Height: 10.7 in. / 27.2 cm<br><br>
+        Length: 3.2 in. / 8.2 cm<br><br>
+        Width: 3.2 in. / 8.2 cm<br><br>
+      </p>
+      

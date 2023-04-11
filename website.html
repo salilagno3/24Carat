@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>24-Carat.com</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .a {
+            text-decoration: none;
+            color: black;
+            margin-top: 5px;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #ffffff;
+            /* Set background color */
+            color: #000000;
+            /* Set text color */
+            height: 60px;
+            /* Set height */
+            display: flex;
+            /* Use flexbox for alignment */
+            justify-content: space-between;
+            /* Space out items in nav */
+            align-items: center;
+            /* Center items vertically */
+            padding: 0 30px;
+            /* Add some padding to left and right */
+            margin-bottom: 12px;
+            /* Add some margin to the bottom */
+        }
+
+        nav ul {
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+            list-style: none;
+            /* Remove default list style */
+            display: flex;
+            /* Use flexbox for alignment */
+        }
+
+        nav ul li {
+
+            padding-top: 10px;
+            margin: 15px 15px;
+            /* Add some margin between list items */
+        }
+
+        nav ul li a {
+            color: #000000;
+            /* Set text color */
+            text-decoration: none;
+            /* Remove default underline */
+            padding: 15px;
+            /* Add some padding */
+            transition: background-color 0.3s ease;
+            /* Add a transition */
+
+        }
+
+        nav ul li a:hover {
+            text-shadow: #363131;
+            background-color: #040404;
+            /* Change background color on hover */
+            color: #ffffff;
+            /* Change text color on hover */
+        }
+
+        /* Logo Styling */
+        .logo {
+            height: 69px;
+            font-size: 50px;
+            /* Set font size */
+            font-weight: bold;
+            /* Set font weight */
+            text-transform: uppercase;
+            /* Convert text to uppercase */
+            letter-spacing: 2px;
+            /* Add some letter spacing */
+            color: #fff;
+            /* Set text color */
+            text-decoration: none;
+            /* Remove default underline */
+        }
+
+        .logo:hover {
+            transform: rotate(360deg);
+            /* Add a hover effect */
+        }
+
+        .logo img {
+            height: 70px;
+            /* Set image height */
+            margin-right: 10px;
+            /* Add some margin to the right */
+            vertical-align: middle;
+            /* Align image vertically */
+        }
+
+
+
+        .mainlogo {
+            display: block;
+            float: right;
+            height: 400px;
+            margin-right: 10px;
+            margin-bottom: 35px;
+            /* Reduce margin to avoid overlapping */
+            padding-top: 15px;
+            margin-top: 20px;
+            padding-right: 40px;
+        }
+
+        .line {
+            height: 90px;
+            text-align: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 150px;
+            margin-right: 250px;
+            background-color: rgb(0, 0, 0);
+            /* background-color: none; */
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(142, 119, 88, 0.463);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+        }
+
+        .bds {
+            display: block;
+            height: none;
+            width: 313px;
+            margin-left: 460px;
+            background-color: none;
+            display: block;
+            border-top: solid black;
+
+        }
+
+        .div {
+            height: 250px;
+            margin-right: 170px;
+            float: right;
+        }
+
+        .divv {
+            height: 250px;
+            float: right;
+            margin-right: 170px;
+        }
+
+        .divvv {
+            height: 250px;
+            float: right;
+            margin-right: 170px;
+        }
+
+        .features {
+            text-align: center;
+        }
+
+        .para {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .footer {
+            background-color: #fff;
+            /* border: 2px solid red; */
+            margin-top: 400px;
+            position: absolute;
+            width: 100%;
+            margin-left: -1px;
+            height: 250px;
+            
+
+        }
+
+        .footimg {
+            width: 147px;
+            margin-left: 30px;
+            margin-top: 30px
+        }
+
+        .p {
+            position: absolute;
+            display: inline-block;
+            margin-left: -150px;
+            margin-top: 120px;
+        }
+
+        .soc {
+            /* background-color: red; */
+            /* border: 2px solid red; */
+            color: grey;
+            transition: 0.5s;
+            text-decoration: none;
+            margin: 0 5px;
+            display: inline-block;
+            width: 28px;
+            height: 100px;
+
+        }
+
+        .sci {
+            margin-top: 20px;
+            margin-left: 38px;
+        }
+
+        .twit:hover {
+            color: rgb(29 161 242);
+        }
+
+        .inst:hover {
+            color: #fd5949;
+        }
+
+        .fb:hover {
+            color: blue;
+        }
+
+        .flink {
+            text-decoration: none;
+            text-align: right;
+            padding-left: 900px;
+            display:inline-block;
+            
+        }
+        .con {
+            width: 80vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .header {
+            width: 100%;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #1b2741;
+            text-align: center;
+        }
+
+        .products {
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 500px;
+        }
+
+        .product {
+            position: relative;
+            background-color: #f7f6f9;
+            width: 350px;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px 20px 40px;
+            border-radius: 10px;
+            transition: .5s;
+        }
+
+        .product:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        }
+
+        .image {
+            width: 100%;
+            height: 60%;
+            display: grid;
+            place-items: center;
+        }
+
+        .image img {
+            width: 240px;
+        }
+
+        .product p {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .buy {
+            position: absolute;
+            bottom: 10px;
+            right: 50px;
+        }
+
+        .buy button {
+            top: 200px;
+            padding: 7px 15px;
+            border-radius: 7px;
+            border: none;
+            background-color: rgb(142, 117, 88);
+            font-size: 18px;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .buy button:hover {
+            transform: scale(1.1);
+        }
+
+        #pri {
+            padding-top: 140px;
+            padding-left: 30px;
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <nav>
+        <a class="logo" href="#">
+            <img src="logo.jpg" alt="Logo">
+            24-Carat.COM
+        </a>
+        <ul class="menu" >
+            <b>
+                <li><a href="website.html">Home</a></li>
+            </b>
+            <b>
+                <li><a href="About.html">About</a></li>
+            </b>
+            <!-- <b>
+                <li><a href="cont.html">Product</a></li>
+            </b> -->
+            <b>
+                <li><a href="cont.html">Contact</a></li>
+            </b>
+            <b>
+                <li><a href="login.html">Login</a></li>
+            </b>
+        </ul>
+    </nav>
+    <hr>
+    <div class="container">
+        <div>
+            <h1 class="line">Finally, an easy way to<br> drink more water!</h1><br>
+            <p>Our smart bottles help you avoid dehydration and<br> improve your health all while saving the planet from
+                single-use plastic</p>
+        </div>
+        <img class="mainlogo" src="mainlogo.jpg" alt="Bottle Design">
+    </div>
+    <br>
+
+    <div>
+        <h1 class="bds">BLINK DRINK SYNC</h1>
+        <p style="text-align: center;" class="invent">We invented the smart water bottle to empower
+            individuals to live a healthier life through hydration</p>
+    </div>
+
+
+    <div>
+        <section style="background-color: rgba(142, 119, 88, 0.463);">
+            <div>
+
+                <div>
+
+                    <hr>
+                    <h2 style="text-align: center;  padding-right: 900px; border-bottom: #363131; padding-top: 40px;  ">
+                        Product Information</h2>
+                    <p style=" padding-left: 62px; ">The 24-Carat is a stainless-steel, vacuum-insulated chug that keeps
+                        drinks cold for up to 24 hours. The LED smart sensor “puck” glows to remind you when it’s time
+                        to drink and tracks your water intake by syncing via Bluetooth to the 24-Carat App. The 24-Carat
+                        bundle includes both a chug and a straw lid.</p>
+                    <h2 style="padding-left: 62px;margin-bottom: 10px; padding-top: 20px;">How does 24-Carat work?</h2>
+                    <p style=" text-align: none; padding-left: 59px;">Throughout each day, 24-Carat STEEL calculates and
+                        adjusts a personalized hydration goal based on your body and activity level. The sensor puck
+                        tracks how many ounces or milliliters you drink and then records it via the app on your smart
+                        phone.
+                    </p>
+                    <h2 style="padding-left: 62px;margin-bottom: 10px; padding-top: 20px;">Highlights</h2>
+                    <p style=" text-align: none; padding-left: 59px; padding-bottom: 30px;">Glows to remind you to drink
+                        throughout the day
+                        and can be customized by pattern and color
+
+                        Sensor puck tracks water intake, <br><br> It syncs via Bluetooth to the Free 24-Carat App
+
+                        Rechargeable battery with included fast-charging cable
+
+                        Stainless steel and vacuum insulated to keep drinks cold for up to 24 hours
+
+                        <br> BPA Free <br> <br>
+
+                        Protective spout cover and lock to keep out dirt and germs and prevent spills
+
+                        Clinically proven accuracy within 3% of manual readings through Mayo Clinic trials
+
+                        Carry loop makes it easy to carry on-the-go
+
+                        Bottle and lids are dishwasher safe. Clean sensor puck with a damp cloth
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr><br>
+
+
+        <div>
+            <h1 class="features">Features</h1><br>
+        </div>
+
+
+        <div class="img">
+            <div>
+                <img style="height: 450px; float: right; " src="img7.jpg" alt="">
+
+            </div>
+            <div>
+                <img style="height: 450px;   " src="img9.jpg" alt="content">
+            </div>
+
+
+
+
+            <div>
+                <div>
+                    <p class="para">The 24-Carat syncs seamlessly with the 24-Carat PRO STEEL. Once you create an
+                        account, the app can access Apple Health for your personal info and step data—which it uses
+                        to
+                        adjust your daily hydration goal. The app also pushes every sip it records back to Apple
+                        Health,
+                        allowing you to see all your data in one place. You can also keep track of your consumption
+                        on
+                        the Apple Watch and easily add amounts of water that you drink from sources other than the
+                        24-Carat STEEL bottle.
+                    </p>
+                </div>
+            </div><br>
+            <hr>
+        </div>
+    </div>
+    <div class="con">
+        <div class="header">
+            <h1 style="padding-left: 220px; padding-bottom: 200px;">You may also like</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <div class="image">
+                    <img src="img133c.jpg" alt="">
+                </div>
+                <div id="pri">
+                    <h2>₹1599</h2>
+                </div>
+                <div class="buy">
+                    <button>Buy now</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="img11.jpg" alt="">
+                </div>
+                <div id="pri">
+                    <h2>₹1599</h2>
+                </div>
+                <div class="buy">
+                    <button>Buy now</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="image">
+                    <img src="img1.jpg" alt="">
+                </div>
+                <div id="pri">
+                    <h2>₹1599</h2>
+                </div>
+                <div class="buy">
+                    <button>Buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="footer"><hr>
+        <a href="website.html" class="a">
+            <img src="logo.jpg" alt="Logo" class="footimg">
+            <p class="p">www.24carat.com</p>
+        </a>
+
+
+        <div class="flink">
+            <ul>
+                <!-- <b>
+                    <li><a href="cont.html">Product</a></li>
+                </b> -->
+                <b>
+                    <li><a href="cont.html">Contact</a></li>
+                </b>
+                <b>
+                    <li style="padding-right: 20px;"><a href="login.html">Login</a></li>
+                </b>
+            </ul>
+        </div>
+
+
+        <div>
+            <p style="text-align: center; ; margin-left: 250px;margin-right: 250px;margin-top: -70px;
+            ">Important: Installment financing is provided directly by participating banks only. 0% rate subject to bank availability. After you make your purchase on the Apple Online Store, contact your bank to see what options may be available to you. Bank Terms and Conditions apply.</p>
+         </div>
+
+
+        <ul class="sci">
+            <div id="lo">
+                <a class="soc twit" href="https://twitter.com/login" target="_blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a class="soc inst" href="https://instagram.com/login" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a class="soc fb" href="https://facebook.com/login" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+        </ul>
+
+        
+    </div>
+
+
+</body>
+
+</html>
